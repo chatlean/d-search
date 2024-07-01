@@ -1,0 +1,4 @@
+openai==0.27.8
+lean-dojo==1.4.0
+ray==2.6.1
+loguru==0.7.0
