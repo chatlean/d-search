@@ -1,7 +1,9 @@
 # dChatLean
-The project focuses on generating mathematical proofs by employing two proof search algorithms. The proof search algorithms we propose are simple yet effective, based on the principles of Breadth-First Search (BFS) and Depth-First Search (DFS). In this repository, we contain all codes for dChatLean and dChatLean+, which are based on DFS.
+The project focuses on generating mathematical proofs by employing two proof search algorithms. The proof search algorithms we propose are simple yet effective, based on the principles of Breadth-First Search (BFS) and Depth-First Search (DFS). 
 
-We utilize chatGPT and Lean3 to support the mathematical proof. This initiative provides the means to explore the mathematical proofs and equips with the necessary resources to address complex mathematical challenges.
+We utilize chatGPT and Lean3 to support the mathematical proof. 
+
+In this repository, we contain all codes for dChatLean and dChatLean+, which are based on DFS.
 
 ## Requirements
 - 3.9 <= python <= 3.10
