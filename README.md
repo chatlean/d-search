@@ -18,6 +18,9 @@ First of all, we utilize chatGPT and Lean3 to support the mathematical proof.
     ```
     pip install -r requirements.txt
     ```
+    
+### Data Preparation
+TODO
 
 ## Structure
 Below is an outline of the main directories and files included in this project:
