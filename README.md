@@ -38,7 +38,7 @@ python scripts/dchatlean_badO.py --API_key [OpenAI API key] --minif2f [Path for 
 
 For example :
 ```
-python scripts/dchatlean_badO.py --API_key YOUR_API_KEY --minif2f datasets/small_minif2f/default --model gpt-4o --temperature 1.4 --ex_data datasets/prompt_examples/examples.json --passn 50 --result_fname small_minif2f_test --ncpu 1
+python scripts/dchatlean_badO.py --API_key YOUR_API_KEY --minif2f datasets/small_minif2f/default --model gpt-4o --temperature 1.4 --ex_data datasets/prompt_examples/examples.json --passn 50 --result_fname small_minif2f_test --ncpu 1 1> log/small_test.out 2> log/small_test.err
 ```
 
 ## Citations
