@@ -36,4 +36,9 @@ python scripts/dchatlean.py --API_key [OpenAI API key] --minif2f [Path for minif
 python scripts/dchatlean_badO.py --API_key [OpenAI API key] --minif2f [Path for minif2f dataset] --model [model name] --temperature [Temperature] --ex_data datasets/prompt_examples/examples.json --passn [Number of repetition for theorem] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
 ```
 
+For example :
+```
+python scripts/dchatlean_badO.py --API_key YOUR_API_KEY --minif2f datasets/small_minif2f/default --model gpt-4o --temperature 1.4 --ex_data datasets/prompt_examples/examples.json --passn 50 --result_fname small_minif2f_test --ncpu 1
+```
+
 ## Citations
