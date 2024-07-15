@@ -31,9 +31,9 @@ Below is an outline of the main directories and files included in this project:
 ### Run
 `dchatlean.py` and `dchatlean_badO.py` are to search for a mathematical proofs with DFS. To run this scripts, use the following command lines:
 ```
-python scripts/chatlean_dfs.py --API_key [OpenAI API key] --minif2f [Path for minif2f dataset] --model [model name] --temperature [Temperature] --ex_data datasets/prompt_examples/examples.json --passn [Number of repetition for theorem] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
+python scripts/dchatlean.py --API_key [OpenAI API key] --minif2f [Path for minif2f dataset] --model [model name] --temperature [Temperature] --ex_data datasets/prompt_examples/examples.json --passn [Number of repetition for theorem] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
 
-python scripts/chatlean_dfs_badO.py --API_key [OpenAI API key] --minif2f [Path for minif2f dataset] --model [model name] --temperature [Temperature] --ex_data datasets/prompt_examples/examples.json --passn [Number of repetition for theorem] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
+python scripts/dchatlean_badO.py --API_key [OpenAI API key] --minif2f [Path for minif2f dataset] --model [model name] --temperature [Temperature] --ex_data datasets/prompt_examples/examples.json --passn [Number of repetition for theorem] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
 ```
 
 ## Citations
