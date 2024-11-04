@@ -34,7 +34,7 @@ Below is an outline of the main directories and files included in this project:
     - `small_minif2f/`: A small part of MiniF2F for quick tests.
 - `log/`: The directory for log files.
 - `results/`: The directory for the experiment results.
-    - `AMC12_2023/`: Our experiment results for the 2023 AMC12 problems, which we newly formalized..
+    - `AMC12_2023/`: Our experiment results for the 2023 AMC12 problems, which we newly formalized.
     - `Llemma/`: Our experiment results using Llemma as the base model instead of ChatGPT, with miniF2F as the problem set.
     - `miniF2F/`: Our main results in the paper.
     - `ProofNet/`: Our experiment results for the ProofNet dataset.
