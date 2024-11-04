@@ -4,7 +4,7 @@ The project focuses on generating mathematical proofs by employing our two proof
 In this repository, we contain all codes and some results for dChatLean and dChatLean+, which are based on d-search.
 
 ## Requirements
-First of all, we utilize ChatGPT as a model and Lean 3 to support the mathematical proof. In our experiments, we use the Lean 3.42.1 version, which is the same as miniF2F.
+First of all, we utilize ChatGPT as a model and Lean 3 to support the mathematical proof. In our experiments, we used Lean version 3.42.1, the same version used in miniF2F.
 
 To interact with Lean, we utilize LeanDojo (https://github.com/lean-dojo/LeanDojo), which allows parallel implementation, easily checks time limits, and is well-organized.
 Using LeanDojo requires several environment settings to facilitate the tracing and extraction of data.
