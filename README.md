@@ -35,9 +35,9 @@ Below is an outline of the main directories and files included in this project:
 - `log/`: The directory for log files.
 - `results/`: The directory for the experiment results.
     - `AMC12_2023/`: Our experiment results for the 2023 AMC12 problems, which we newly formalized.
-    - `Llemma/`: Our experiment results using Llemma as the base model instead of ChatGPT, with miniF2F as the problem set.
+    - `Llemma/`: Our experiment results using [Llemma](https://arxiv.org/abs/2310.10631) as the base model instead of ChatGPT, with miniF2F as the problem set.
     - `miniF2F/`: Our main results in the paper.
-    - `ProofNet/`: Our experiment results for the ProofNet dataset.
+    - `ProofNet/`: Our experiment results for the [ProofNet](https://github.com/zhangir-azerbayev/ProofNet) dataset.
 - `scripts/`: The directory for Python files to run dChatLean and dChatLean+.
 
 ### Run
