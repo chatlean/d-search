@@ -234,7 +234,7 @@ unordered_results = list(pool.map_unordered(
         zip(theorems, msg_dict_lst)))
     
 results = {}
-with open('/'.join([args.result_dir, args.result_fname + '_pass{}rate.jsonl'.format(args.passn)]), 'w') as h:
+with open('/'.join([args.result_dir, args.result_fname + '.jsonl']), 'w') as h:
     for i in range(len(theorems)):
         results['repo'] = '/'.join([repo.url, repo.commit])
         results['theorem_path'] = unordered_results[i][0].file_path.__str__()
