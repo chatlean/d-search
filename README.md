@@ -38,14 +38,14 @@ Below is an outline of the main directories and files included in this project:
 ### Run
 `dchatlean.py` and `dchatlean_badO.py` are to search for a mathematical proof with d-search. To run these scripts, use the following command lines:
 ```
-python scripts/dchatlean.py --API_key [OpenAI API key] --model [ChatGPT model name] --temperature [Temperature] --data_path [Path for minif2f dataset] --split [Name of json file for test] --ex_data [File path for example in prompt of ChatGPT] --passn [Number of repetition for a theorem] --result_dir [Directory to save result] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
+python scripts/dchatlean.py --API_key [OpenAI API key] --model [ChatGPT model name] --temperature [Temperature] --data_path [Directory for test dataset] --split [Name of json file for test] --ex_data [File path for example in prompt] --passn [Number of repetition for a theorem] --result_dir [Directory to save result] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
 
-python scripts/dchatlean_badO.py --API_key [OpenAI API key] --model [ChatGPT model name] --temperature [Temperature] --data_path [Path for minif2f dataset] --split [Name of json file for test] --ex_data [File path for example in prompt of ChatGPT] --passn [Number of repetition for a theorem] --result_dir [Directory to save result] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
+python scripts/dchatlean_badO.py --API_key [OpenAI API key] --model [ChatGPT model name] --temperature [Temperature] --data_path [Directory for test dataset] --split [Name of json file for test] --ex_data [File path for example in prompt] --passn [Number of repetition for a theorem] --result_dir [Directory to save result] --result_fname [Name of result file] --ncpu [Number of CPU cores for parallel computing]
 ```
 
 For example :
 ```
-python scripts/dchatlean_badO.py --API_key YOUR_API_KEY --minif2f datasets/small_minif2f/default --model gpt-4o --temperature 1.4 --ex_data datasets/prompt_examples/examples.json --passn 50 --result_fname small_minif2f_test --ncpu 1 1> log/small_test.out 2> log/small_test.err
+python scripts/dchatlean_badO.py --API_key YOUR_API_KEY --model gpt-4o --temperature 1.4 --data_path datasets/small_minif2f/default --split test --ex_data datasets/prompt_examples/examples.json --passn 50 --result_dir results --result_fname small_minif2f_test --ncpu 1 1> log/small_test.out 2> log/small_test.err
 ```
 
 ## Citations
