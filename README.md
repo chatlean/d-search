@@ -7,7 +7,9 @@ In this repository, we contain all codes and some results for dChatLean and dCha
 First of all, we utilize ChatGPT as a model and Lean 3 to support the mathematical proof.
 
 To interact with Lean, we utilize LeanDojo (https://github.com/lean-dojo/LeanDojo), which allows parallel implementation, easily checks time limits, and is well-organized.
+
 Using LeanDojo requires several environment settings to facilitate the tracing and extraction of data.
+
 We only document our specific settings; additional settings can be confirmed in the original LeanDojo repository.
 
 - 3.9 <= python <= 3.10
