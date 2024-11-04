@@ -6,7 +6,7 @@ In this repository, we contain all codes and some results for dChatLean and dCha
 ## Requirements
 First of all, we utilize ChatGPT as a model and Lean 3 to support the mathematical proof. In our experiments, we used Lean version 3.42.1, the same version used in miniF2F.
 
-To interact with Lean, we utilize LeanDojo (https://github.com/lean-dojo/LeanDojo), which allows parallel implementation, easily checks time limits, and is well-organized.
+To interact with Lean, we utilize [LeanDojo](https://github.com/lean-dojo/LeanDojo), which allows parallel implementation, easily checks time limits, and is well-organized.
 Using LeanDojo requires several environment settings to facilitate the tracing and extraction of data.
 We only document our specific settings; additional available settings can be found in the original LeanDojo repository.
 
