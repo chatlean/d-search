@@ -11,17 +11,17 @@ from lean_dojo import *
 import utils
 
 #======================================================================================================================================
-parser = argparse.ArgumentParser(description='Solve minif2f lean by chatgpt')
+parser = argparse.ArgumentParser(description='Solve mathematical problems in Lean by ChatGPT with d-search')
 parser.add_argument('--API_key', default=None, help='Openai API key')
 parser.add_argument('--model', default='gpt-4', help='GPT model version')
 parser.add_argument('--temperature', default=0, type=float, help='Model Temperature')
 parser.add_argument('--req_try', default=10, type=int, help='Number of retry for request of chatgpt')
 parser.add_argument('--req_to', default=60, type=int, help='Time out for request of chatgpt')
 parser.add_argument('--sleep_time', default=90, type=int, help='Time for intermediate sleep')
-parser.add_argument('--ex_data', default=None, help='JSON file name for example prompt')
 
-parser.add_argument('--minif2f', default=None, help='Path for minif2f')
-parser.add_argument('--split', default='test', help='Split of minif2f')
+parser.add_argument('--data_path', default=None, help='Path for dataset')
+parser.add_argument('--split', default='test', help='Name of test JSON file')
+parser.add_argument('--ex_data', default=None, help='File path for example in prompt')
 
 parser.add_argument('--file_path', default=None, help='File path containing theorem')
 parser.add_argument('--full_name', default=None, help='Full name of theorem')
@@ -30,7 +30,7 @@ parser.add_argument('--num_theorems', default=None, type=int, help='The number o
 parser.add_argument('--timeout', default=600, type=int, help='Timeout for proof search')
 parser.add_argument('--passn', default=10, type=int, help='Number of thoerem proving trial')
 
-parser.add_argument('--result_dir', default="results/dfs", help='Path for searching result')
+parser.add_argument('--result_dir', default="results/dfs", help='Directory for searching result')
 parser.add_argument('--result_fname', default='minif2f_chatlean_dfs', help='Name of result file')
 parser.add_argument('--print_iter', default=10, type=int, help='Iteration number for print')
 parser.add_argument('--ncpu', default=1, type=int, help='Number of CPU for parallel computing')
@@ -73,7 +73,7 @@ Next tactic:
 
 """.format(ex['statement'], ex['tactic'])
 
-    repo, theorems, positions = utils._get_theorems(args.minif2f, args.split, args.file_path, args.full_name, args.name_filter, args.num_theorems)
+    repo, theorems, positions = utils._get_theorems(args.data_path, args.split, args.file_path, args.full_name, args.name_filter, args.num_theorems)
     logger.info('The repository to test : {}'.format(repo))
     
     return msg_dict, repo, theorems, positions

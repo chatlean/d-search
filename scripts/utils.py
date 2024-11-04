@@ -17,6 +17,8 @@ def extract_tac(chat_res):
     return new_lst
 
 #======================================================================================================================================
+# Functions to get theorems. These are from LeanDojo (https://github.com/lean-dojo/LeanDojo).
+# TODO: remove and use originals.
 def _get_theorems(
     data_path: str,
     split: str,
