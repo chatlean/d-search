@@ -1,10 +1,10 @@
 # dChatLean
 The project focuses on generating mathematical proofs by employing our two proof search algorithms, b-search and d-search. The proof search algorithms we propose are simple yet effective, based on the principles of breadth-first search and depth-first search. 
 
-In this repository, we contain all codes for dChatLean and dChatLean+, which are based on d-search.
+In this repository, we contain all codes and some results for dChatLean and dChatLean+, which are based on d-search.
 
 ## Requirements
-First of all, we utilize chatGPT and Lean3 to support the mathematical proof. 
+First of all, we utilize ChatGPT and Lean 3 to support the mathematical proof. 
 
 - 3.9 <= python <= 3.10
 - Set the environment variables below:
