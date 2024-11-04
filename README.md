@@ -31,7 +31,8 @@ TODO
 Below is an outline of the main directories and files included in this project:
 - `datasets/`: The directory for the datasets used in experiments.
     - `prompt_examples/`: Examples for a prompt. We contain a file, `examples.json`, used in our experiments.
-    - `small_minif2f/`: A small part of MiniF2F for quick tests. 
+    - `small_minif2f/`: A small part of MiniF2F for quick tests.
+- `log/`: The directory for log files.
 - `results/`: The directory for the experiment results.
 - `scripts/`: The directory for Python files to run dChatLean and dChatLean+.
 
