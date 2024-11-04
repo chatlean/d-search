@@ -11,7 +11,7 @@ from lean_dojo import *
 import utils
 
 #======================================================================================================================================
-parser = argparse.ArgumentParser(description='Solve minif2f lean by chatgpt')
+parser = argparse.ArgumentParser(description='Solve mathematical problems in Lean by ChatGPT with d-search and Bad(O) feedback algorithm')
 parser.add_argument('--API_key', default=None, help='Openai API key')
 parser.add_argument('--model', default='gpt-4', help='GPT model version')
 parser.add_argument('--temperature', default=0, type=float, help='Model Temperature')
@@ -31,7 +31,7 @@ parser.add_argument('--timeout', default=600, type=int, help='Timeout for proof 
 parser.add_argument('--passn', default=10, type=int, help='Number of thoerem proving trial')
 
 parser.add_argument('--result_dir', default="results/dfs", help='Directory for searching result')
-parser.add_argument('--result_fname', default='minif2f_chatlean_dfs', help='Name of result file')
+parser.add_argument('--result_fname', default='result_dchatlean_badO', help='Name of result file')
 parser.add_argument('--print_iter', default=10, type=int, help='Iteration number for print')
 parser.add_argument('--ncpu', default=1, type=int, help='Number of CPU for parallel computing')
 
@@ -79,6 +79,7 @@ Next tactic:
     return msg_dict, repo, theorems, positions
 
 #======================================================================================================================================
+# TODO: check timeout, all_path and break check
 @ray.remote
 class psearch():
     def __init__(self, args):

@@ -31,7 +31,7 @@ parser.add_argument('--timeout', default=600, type=int, help='Timeout for proof 
 parser.add_argument('--passn', default=10, type=int, help='Number of thoerem proving trial')
 
 parser.add_argument('--result_dir', default="results/dfs", help='Directory for searching result')
-parser.add_argument('--result_fname', default='minif2f_chatlean_dfs', help='Name of result file')
+parser.add_argument('--result_fname', default='result_dchatlean', help='Name of result file')
 parser.add_argument('--print_iter', default=10, type=int, help='Iteration number for print')
 parser.add_argument('--ncpu', default=1, type=int, help='Number of CPU for parallel computing')
 
@@ -79,6 +79,7 @@ Next tactic:
     return msg_dict, repo, theorems, positions
 
 #======================================================================================================================================
+# TODO: check timeout, all_path and break check
 @ray.remote
 class psearch():
     def __init__(self, args):
@@ -89,6 +90,7 @@ class psearch():
         status = 'Init'
         proving_try = 0
         tot_req_no = 0
+        all_path = []
         for j in range(args.passn):
             proving_try += 1
             logger.info('For thm {} : {} proving try'.format(theorem.full_name, proving_try))
@@ -139,11 +141,12 @@ class psearch():
                 else:
                     pass
                 
-
+            all_path.append({'status':status, 'path': proof})
+            logger.info(f"all_path: 'status':{status}, 'path': {proof}")
             if status == 'Proved':
                 break
 
-        return theorem, init_state.pp, status, proof, searching_time, proving_try, tot_req_no
+        return theorem, init_state.pp, status, proof, searching_time, proving_try, tot_req_no, all_path
         
     def generate(self, args, state, msg_dict):
     
@@ -186,6 +189,7 @@ Next tactic:
 
 ray.init(num_cpus = args.ncpu)
 msg_dict, repo, theorems, positions = preparation(args) 
+
 search_obj = [psearch.remote(args) for _ in range(args.ncpu)]
 logger.info(len(search_obj))
 pool = ActorPool(search_obj)
@@ -207,6 +211,7 @@ with open('/'.join([args.result_dir, args.result_fname + '_pass{}rate.jsonl'.for
         results['searching_time'] = unordered_results[i][4]
         results['proving_try_num'] = unordered_results[i][5]
         results['total_req_num'] = unordered_results[i][6]
+        results['all_path'] = unordered_results[i][7]
         json.dump(results, h)
         h.write('\n')
         
