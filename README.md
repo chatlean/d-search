@@ -49,4 +49,7 @@ For example :
 python scripts/dchatlean_badO.py --API_key YOUR_API_KEY --model gpt-4o --temperature 1.4 --data_path datasets/small_minif2f/default --split test --ex_data datasets/prompt_examples/examples.json --passn 50 --result_dir results --result_fname small_minif2f_test --ncpu 1 1> log/small_test.out 2> log/small_test.err
 ```
 
+## Results in Paper
+TODO
+
 ## Citations
