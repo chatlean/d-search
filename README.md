@@ -78,4 +78,14 @@ For a detailed analysis, please refer to our paper.
   
 </details>
 
+<details>
+  <summary> Ablation study for the feedback algorithm by Bad(O) </summary>
+    
+  Model|Baseline|Temperature|Number of attempts|Pass rate
+  :---:|:---:|:---:|:---:|:---:
+  <p>dChatLean <p>dChatLean+|GPT-4 Turbo|1.4|10|<p>15.16 \% <p>18.85 \%
+  <p>dChatLean <p>dChatLean+|GPT-4 Turbo|1.4|50|<p>23.77 \% <p>25.00 \%
+  
+</details>
+
 ## Citations
