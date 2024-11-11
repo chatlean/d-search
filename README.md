@@ -59,9 +59,11 @@ For a detailed analysis, please refer to our paper.
 
 <details>
   <summary> Ablation study for the number of attempts </summary>
+    
   Model|Baseline|Temperature|Number of attempts|Pass rate
   :---|:---:|:---:|:---:|:---:
-  dChatLean|<p> GPT-4 Turbo </p> GPT-4 Turbo
+  dChatLean|GPT-4 Turbo|0.7|<p>10 <p>50|
+  
 </details>
 
 ## Citations
