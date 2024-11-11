@@ -67,4 +67,15 @@ For a detailed analysis, please refer to our paper.
   
 </details>
 
+<details>
+  <summary> Ablation study for the temperature </summary>
+    
+  Model|Baseline|Number of attempts|Temperature|Pass rate
+  :---|:---:|:---:|:---:|:---:
+  dChatLean|GPT-4|10|<p>0.7 <p>1.4|<p>14.75 \% <p>15.98 \%
+  dChatLean|GPT-4 Turbo|10|<p>0.7 <p>1.4|<p>13.93 \% <p>15.16 \%
+  dChatLean|GPT-4 Turbo|50|<p>0.7 <p>1.4|<p>20.90 \% <p>23.77 \%
+  
+</details>
+
 ## Citations
