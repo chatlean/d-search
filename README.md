@@ -25,7 +25,7 @@ We only document our specific settings; additional available settings can be fou
     ```
     
 ### Data Preparation
-TODO
+We use LeanDojo to interact with Lean. Employing LeanDojo requires a data extraction process. For more information and a detailed example, refer to the [LeanDojo](https://github.com/lean-dojo/LeanDojo).
 
 ## Structure
 Below is an outline of the main directories and files included in this project:
