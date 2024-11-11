@@ -54,6 +54,14 @@ python scripts/dchatlean_badO.py --API_key YOUR_API_KEY --model gpt-4o --tempera
 ```
 
 ## Results in Paper
-TODOTODO
+Here, we present experimental results from our paper for d-search.
+For a detailed analysis, please refer to our paper.
+
+<details>
+  <summary> Ablation study for the number of attempts </summary>
+  Model|Baseline|Temperature|Number of attempts|Pass rate
+  :---|:---:|:---:|:---:|:---:
+  dChatLean|<p> GPT-4 Turbo </p> GPT-4 Turbo
+</details>
 
 ## Citations
