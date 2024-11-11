@@ -60,21 +60,21 @@ For a detailed analysis, please refer to our paper.
 <details>
   <summary> Ablation study for the number of attempts </summary>
     
-  Model|Baseline|Temperature|Number of attempts|Pass rate
-  :---:|:---:|:---:|:---:|:---:
-  dChatLean|GPT-4 Turbo|0.7|<p>10 <p>50|<p>13.93 \% <p>20.90 \%
-  dChatLean|GPT-4 Turbo|1.4|<p>10 <p>50|<p>15.16 \% <p>23.77 \%
+  |Model|Baseline|Temperature|Number of attempts|Pass rate
+  |:---:|:---:|:---:|:---:|:---:
+  |dChatLean|GPT-4 Turbo|0.7|<p>10 <p>50|<p>13.93 \% <p>20.90 \%
+  |dChatLean|GPT-4 Turbo|1.4|<p>10 <p>50|<p>15.16 \% <p>23.77 \%
   
 </details>
 
 <details>
   <summary> Ablation study for the temperature </summary>
     
-  Model|Baseline|Number of attempts|Temperature|Pass rate
-  :---:|:---:|:---:|:---:|:---:
-  dChatLean|GPT-4|10|<p>0.7 <p>1.4|<p>14.75 \% <p>15.98 \%
-  dChatLean|GPT-4 Turbo|10|<p>0.7 <p>1.4|<p>13.93 \% <p>15.16 \%
-  dChatLean|GPT-4 Turbo|50|<p>0.7 <p>1.4|<p>20.90 \% <p>23.77 \%
+  |Model|Baseline|Number of attempts|Temperature|Pass rate
+  |:---:|:---:|:---:|:---:|:---:
+  |dChatLean|GPT-4|10|<p>0.7 <p>1.4|<p>14.75 \% <p>15.98 \%
+  |dChatLean|GPT-4 Turbo|10|<p>0.7 <p>1.4|<p>13.93 \% <p>15.16 \%
+  |dChatLean|GPT-4 Turbo|50|<p>0.7 <p>1.4|<p>20.90 \% <p>23.77 \%
   
 </details>
 
