@@ -3,20 +3,23 @@ import json
 import hashlib
 from loguru import logger
 from typing import List, Tuple, Optional
+import os
 
-from lean_dojo import *
+from lean_dojo import LeanGitRepo, Theorem, Pos, is_available_in_cache
 
-#======================================================================================================================================
+
+# ======================================================================================================================================
 def extract_tac(chat_res):
     lst = re.findall('`.+`:', chat_res)
     new_lst = []
-    
+
     for i in lst:
         new_lst.append(i.rstrip(':').strip('`'))
-    
+
     return new_lst
 
-#======================================================================================================================================
+
+# ======================================================================================================================================
 # Functions to get theorems. These are from LeanDojo (https://github.com/lean-dojo/LeanDojo).
 # TODO: remove and use originals.
 def _get_theorems(
